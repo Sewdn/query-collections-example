@@ -1,5 +1,5 @@
 /* CSS declarations go here */
-ol.ranking { position: relative; }
+ol.ranking { position: relative; border: solid 1px;height:200px; }
 ol.ranking li { 
     position: absolute; top: 0; left: 0;
     transition: all 0.2s ease-out;

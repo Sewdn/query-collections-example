@@ -1,10 +1,8 @@
-<template name="ranking">
-  <h2>Evident Ranking</h2>
+<template name="ranking3">
+  <h2>QC Player Ranking</h2>
   <ol class='ranking'>
   {{#each ranking}}
-    {{#with dataScope}}
     <li>{{player.name}}: {{score}} ({{unique}})</li>
-    {{/with}}
   {{/each}}
   </ol>
 </template>

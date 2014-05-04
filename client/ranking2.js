@@ -1,7 +1,7 @@
-Template.ranking.helpers({
+Template.ranking2.helpers({
   'ranking': function(){
-    return Scores.find(
-      {game: Session.get('selectedGame')}
+    return GameRanking.find(
+      {}
     );
   },
   'dataScope': function(){
@@ -10,21 +10,12 @@ Template.ranking.helpers({
       score: this.score
     };
   },
-  'games': function(){
-    return Games.find();
-  },
   'unique': function(){
     return Random.id().substr(0,3);
   }
 });
 
-Template.ranking.events({
-  'click ul.games li': function(e,t){
-    Session.set('selectedGame', this._id);
-  }
-});
-
-Template.ranking.created = function() {
+Template.ranking2.created = function() {
   $(".ranking").on("webkitTransitionEnd", function () {
     $(this).hide().offset();
     $(this).show();
