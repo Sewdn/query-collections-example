@@ -1,0 +1,14 @@
+<template name="ranking">
+  <ul class='games'>
+  {{#each games}}
+    <li>{{name}}</li>
+  {{/each}}
+  </ul>
+  <ol class='ranking'>
+  {{#each ranking}}
+    {{#with dataScope}}
+    <li>{{player.name}}: {{score}} ({{unique}})</li>
+    {{/with}}
+  {{/each}}
+  </ol>
+</template>

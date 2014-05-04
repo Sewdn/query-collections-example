@@ -1,0 +1,12 @@
+/* CSS declarations go here */
+ol.ranking { position: relative; }
+ol.ranking li { 
+    position: absolute; top: 0; left: 0;
+    transition: all 0.2s ease-out;
+}
+ 
+ol.ranking li:nth-child(1)  { -webkit-transform: translate3d(0, 0%, 0); }
+ol.ranking li:nth-child(2)  { -webkit-transform: translate3d(0, 100%, 0); }
+ol.ranking li:nth-child(3)  { -webkit-transform: translate3d(0, 200%, 0); }
+ol.ranking li:nth-child(4)  { -webkit-transform: translate3d(0, 300%, 0); }
+ol.ranking li:nth-child(5)  { -webkit-transform: translate3d(0, 400%, 0); }
